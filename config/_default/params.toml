@@ -75,6 +75,9 @@ fingerprintAlgorithm = "sha256"
   # event = ""
   # script = ""
 
+[ClustrMaps]
+  # id = "ABC12345"
+
 [verification]
   # google = ""
   # bing = ""

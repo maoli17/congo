@@ -12,5 +12,8 @@
       data-api="{{ default "https://plausible.io/api/event" site.Params.plausibleAnalytics.event }}"
       src="{{ default "https://plausible.io/js/script.js" site.Params.plausibleAnalytics.script }}"></script>
   {{ end }}
+  {{ with .Site.Params.ClustrMaps.id }}
+    <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d={{ . }}"></script>
+  {{ end }}
   {{ template "_internal/google_analytics.html" . }}
 {{ end }}
