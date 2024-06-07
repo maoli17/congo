@@ -556,12 +556,12 @@ video {
 
 .prose {
   color: var(--tw-prose-body);
-  max-width: 65ch;
+  max-width: 100ch;
 }
 
 .prose :where(p):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-  margin-top: 1.25em;
-  margin-bottom: 1.25em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
 }
 
 .prose :where([class~="lead"]):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
@@ -605,8 +605,8 @@ video {
 
 .prose :where(ol):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   list-style-type: decimal;
-  margin-top: 1.25em;
-  margin-bottom: 1.25em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   padding-inline-start: 1.625em;
 }
 
@@ -648,8 +648,8 @@ video {
 
 .prose :where(ul):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   list-style-type: disc;
-  margin-top: 1.25em;
-  margin-bottom: 1.25em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   padding-inline-start: 1.625em;
 }
 
@@ -713,7 +713,7 @@ video {
   color: var(--tw-prose-headings);
   font-weight: 700;
   font-size: 1.5em;
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom: 1em;
   line-height: 1.3333333;
 }
@@ -727,7 +727,7 @@ video {
   color: var(--tw-prose-headings);
   font-weight: 600;
   font-size: 1.25em;
-  margin-top: 1.6em;
+  margin-top: 0.9em;
   margin-bottom: 0.6em;
   line-height: 1.6;
 }
@@ -740,7 +740,7 @@ video {
 .prose :where(h4):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   color: var(--tw-prose-headings);
   font-weight: 600;
-  margin-top: 1.5em;
+  margin-top: 0.8em;
   margin-bottom: 0.5em;
   line-height: 1.5;
 }
@@ -2083,6 +2083,10 @@ code {
   max-width: 48rem;
 }
 
+.max-w-6xl {
+    max-width: 75rem;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -2101,6 +2105,10 @@ code {
 
 .max-w-prose {
   max-width: 65ch;
+}
+
+.max-w-prose-lg {
+  max-width: 100ch;
 }
 
 .flex-auto {
@@ -2438,6 +2446,10 @@ code {
 
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .text-right {

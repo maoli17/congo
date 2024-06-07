@@ -40,10 +40,14 @@
             {{ partial "toc.html" . }}
           </div>
         </div>
+        <div class="min-h-0 min-w-0 max-w-prose grow">
+            {{ .Content | emojify }}
+        </div>
+        {{ else }}
+        <div class="min-h-0 min-w-0 max-w-prose-lg grow text-justify">
+          {{ .Content | emojify }}
+        </div>
       {{ end }}
-      <div class="min-h-0 min-w-0 max-w-prose grow">
-        {{ .Content | emojify }}
-      </div>
     </section>
     <footer class="max-w-prose pt-8 print:hidden">
       {{ partial "author.html" . }}
